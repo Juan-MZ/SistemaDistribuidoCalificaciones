@@ -8,6 +8,6 @@ orden de ejecucion:
 1) co.unicauca.servicios.ServObjBien.java
 2) co.unicauca.servicios.ServObjEst.java
 3) co.unicauca.servidor.servicios.ServidorDeObj.java
+4) package co.unicauca.servicios.ClienteDeObj.java
 
 la cuarta aplicacion tiene datos quemados para cargar al Servidor de objetos.
-4) package co.unicauca.servicios.ClienteDeObj.java
