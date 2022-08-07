@@ -1,0 +1,35 @@
+module sop_corba{
+    interface ControladorCalificacionInt{
+
+        struct CalificacionDTO{
+            long codigoEstudiante;
+            string nombreEstudiante;
+            long corte;
+            float calificacion;
+        };
+
+        struct InformeDTO{
+            long corte1;
+            long corte2;
+            long corte3;
+        };
+
+		boolean registrarCalificacion( in CalificacionDTO objCalificacion);
+
+        InformeDTO obtenerAlertasVerdesCorte ();
+        InformeDTO obtenerAlertasBienestarCorte ();
+        long obtenerAlertasRojas();
+    };
+
+    interface ControladorAlertaInt{
+
+        struct AlertaDTO{
+            long codigoEstudiante;
+            long corte;
+            string color;
+        };
+
+		boolean enviarAlerta(in AlertaDTO objAlerta);
+    };
+
+};
