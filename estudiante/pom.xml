@@ -21,6 +21,12 @@
     <jacoco.unit-tests.limit.method-complexity>5</jacoco.unit-tests.limit.method-complexity>
   </properties>
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.glassfish.corba/glassfish-corba-omgapi -->
+    <dependency>
+      <groupId>org.glassfish.corba</groupId>
+      <artifactId>glassfish-corba-omgapi</artifactId>
+      <version>4.2.4</version>
+    </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
